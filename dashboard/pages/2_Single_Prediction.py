@@ -167,7 +167,7 @@ if st.button("🚀 Predict Churn Risk", use_container_width=True):
 
     try:
         response = requests.post(
-            "http://127.0.0.1:8000/predict",
+            "https://customer-churn-prediction-dashboard-s2f0.onrender.com/predict",
             json=payload,
             timeout=10
         )
