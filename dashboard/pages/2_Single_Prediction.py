@@ -363,12 +363,8 @@ if st.button("🚀 Predict Churn Risk", use_container_width=True):
         with col2:
             st.metric("Recommended Action", action)    
 
-    except requests.exceptions.RequestException:
-
-        st.error(
-            "❌ FastAPI is not running. "
-            "Start the API on port 8000."
-        )
+    except requests.exceptions.RequestException as e:
+        st.error(f"❌ Unable to connect to the prediction API: {e}")
 
 
 
