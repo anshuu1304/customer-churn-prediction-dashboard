@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data
+data/
+*.csv
+
+# MLflow
+mlflow.db
+mlruns/
+
+# Models
+models/
+
+# Environment
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
