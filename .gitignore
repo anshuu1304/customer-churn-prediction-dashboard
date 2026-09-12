@@ -12,8 +12,6 @@ data/
 mlflow.db
 mlruns/
 
-# Models
-models/
 
 # Environment
 .env
